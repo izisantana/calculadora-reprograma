@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .fundo {
+      background-image: linear-gradient(45deg, #FF69B4, #FFB6C1);
+      height: 100vw;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+
+    .calculadora {
+      position: absolute;
+      background-color: rgba(219, 20, 147, 0.5);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 15px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .botao {
+      width: 50px;
+      height: 50px;
+      font-size: 25px;
+      cursor: pointer;
+      background-color: #FFEFD5;
+      border: none;
+      border-radius: 2px;
+      margin: 3px;
+    }
+
+    .botao:hover {
+      background-color: #FF1493;
+    }
+
+    .igual {
+      width: 50px;
+      height: 50px;
+      font-size: 25px;
+      cursor: pointer;
+      background-color: #FFB6C1;
+      border: none;
+      border-radius: 2px;
+      width: 106px;
+      margin: 3px;
+    }
+
+    .igual:hover {
+      background-color: #FF1493;
+    }
+
+    #resultado {
+      width: 222px;
+      height: 30px;
+      margin: 5px;
+      background-color: white;
+      color: black;
+      text-align: right;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fundo">
+    <h1>JAVASCRIPT</h1>
+    <div class="calculadora">
+      <h1>Calculadora</h1>
+      <p id="resultado">555</p>
+      <table>
+        <tr>
+          <td><button class="botao"> % </button></td>
+          <td><button class="botao"> CE </button></td>
+          <td><button class="botao"> C </button></td>
+          <td><button class="botao"> / </button></td>
+        </tr>
+
+        <tr>
+          <td><button class="botao"> 7 </button></td>
+          <td><button class="botao"> 8 </button></td>
+          <td><button class="botao"> 9 </button></td>
+          <td><button class="botao"> x </button></td>
+        </tr>
+
+        <tr>
+          <td><button class="botao"> 4 </button></td>
+          <td><button class="botao"> 5 </button></td>
+          <td><button class="botao"> 6 </button></td>
+          <td><button class="botao"> - </button></td>
+        </tr>
+
+        <tr>
+          <td><button class="botao"> 1 </button></td>
+          <td><button class="botao"> 2 </button></td>
+          <td><button class="botao"> 3 </button></td>
+          <td><button class="botao"> + </button></td>
+        </tr>
+
+        <tr>
+          <td><button class="botao"> 0 </button></td>
+          <td><button class="botao"> , </button></td>
+          <td colspan="2"><button class="igual"> = </button></td>
+        </tr>
+
+      </table>
+    </div>
+
+  </div>
+  <script>
+    const button = document.getElementsByClassName("botao");
+
+    console.log(button);
+
+  </script>
+</body>
+
+</html>
